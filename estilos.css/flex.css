@@ -1,0 +1,79 @@
+                /*colors*/
+                :root{
+                    --topo-color:#f6f5ff;
+                    --topo-txt-color:black;
+                    --topo-txti-color:white;
+                    --topo-hover-color:rgb(2, 2, 2);
+                    --topo-hoveri-color:#dddddd;
+                    --body-color:#f2f3f6;
+                    --sidebar-color:#fff;
+                    --primare-color:#d82a2a;
+                    --primari-color:#d82a2a;
+                    --primary-color:#d82a2a;
+                    --primar-color:#d82a2a;
+                    --primary-color-light:#f6f5ff;
+                    --toogle-color:#ddd;
+                    --toogl-color:rgb(179, 179, 179);
+                    --text-color:#707070;
+                    --tex-color:black;
+                    --botao-color:#fefdfd5b;
+                    --log-color:#c9c7c7;
+                    --botao-color:#d82a2a;
+                    --bota-color:#fffbfb54;
+                
+                          /* transition */
+                
+                --tran-02:all 0.2s ease;
+                --tran-03:all 0.3s ease;
+                --tran-04:all 0.4s ease;
+                --tran-05:all 0.5s ease;
+                
+                }
+                
+                body{
+                    height: 100vh;
+                    background: var(--body-color);
+                    transition: var(--tran-05);
+                }
+                body.dark{
+                    --topo-color:#000000;
+                    --topo-txt-color:rgb(255, 255, 255);
+                    --topo-txti-color:black;
+                    --topo-hoveri-color:#3a3939;
+                    --topo-hover-color:rgb(255, 254, 254);
+                    --body-color:#18191a;
+                    --sidebar-color:#242526;
+                    --primare-color:#0b0b0b;
+                    --primari-color:#ffc400;
+                    --primary-color:#ffc600;
+                    --primar-color:#ffc600;
+                    --primary-color-light:#3a3b3c;
+                    --toogle-color:#fff;
+                    --toogl-color:rgb(179, 179, 179);
+                    --text-color:#ccc;
+                    --tex-color:black;
+                    --botao-color:#0000005b;
+                    --log-color:#ffc800;
+                    --botao-color:rgb(3, 3, 3);
+                    --bota-color:#0a0a0a60;
+                    
+                }
+ 
+#principal{
+    width: 87%;
+    height: 330px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.interna{
+    width: 300px;
+    height:300px;
+    background-color:var(--topo-hoveri-color);
+    margin: 11px;
+    text-align: center;
+    border-radius: 100%;
+}
+

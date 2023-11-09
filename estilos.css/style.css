@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2? family= Bungee+Spice & family= Noto+Sans:wght@400;600 & família= Poppins:ital,wght@0,400;1,300 & display= troca');
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+                /*colors*/ 
+:root{
+    --cor-menu:rgb(232,253,241);
+    --cor-p:black;
+    --topo-color:#787cb5;
+    --topo-txt-color:black;
+    --topo-hover-color:rgb(2, 2, 2);
+    --body-color:#f2f3f6;
+    --sidebar-color:#fff;
+    --primare-color:#1c214d;
+    --primari-color:#1c214d;
+    --primary-color:#1c214d;
+    --primar-color:#1c214d;
+    --primary-color-light:#f6f5ff;
+    --toogle-color:#ddd;
+    --toogl-color:rgb(179, 179, 179);
+    --text-color:#707070;
+    --tex-color:black;
+    --botao-color:#fefdfd5b;
+    --log-color:#c9c7c7;
+    --botao-color:#1c214d;
+    --bota-color:#fffbfb54;
+    --text-quadrado:#818080;
+    --box:#474A8A;
+          /* transition */
+
+--tran-02:all 0.2s ease;
+--tran-03:all 0.3s ease;
+--tran-04:all 0.4s ease;
+--tran-05:all 0.5s ease;
+
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+body.dark{
+    --cor-p:rgb(232,253,241);
+    --topo-color:#474A8A;
+    --topo-txt-color:rgb(255, 255, 255);
+    --topo-hover-color:rgb(255, 254, 254);
+    --body-color:#18191a;
+    --sidebar-color:#242526;
+    --primare-color:#0b0b0b;
+    --primari-color:#37428d;
+    --primary-color:#37428d;
+    --primar-color:#37428d;
+    --primary-color-light:#3a3b3c;
+    --toogle-color:#fff;
+    --toogl-color:rgb(179, 179, 179);
+    --text-color:#ccc;
+    --tex-color:black;
+    --botao-color:#0000005b;
+    --log-color:#37428d;
+    --botao-color:rgb(3, 3, 3);
+    --bota-color:#0a0a0a60;
+    --text-quadrado:rgba(244, 239, 239, 0.036);
+    --box:#787CB5;
+}
+            /* ===========sidebar======= */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    padding: 10px 14px;
+    background:var(--sidebar-color);
+    transition: var(--tran-05);
+    z-index:100;
+}
+.sidebar.close{
+    width: 88px;
+}
+            /* ===========resuable css======= */
+  .sidebar .text{
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text-color);
+      transition: var(--tran-03);
+      white-space: nowrap;
+      opacity: 1;
+ }
+ .sidebar.close .text{
+    opacity: 0;
+}
+ .sidebar .image{
+     min-width: 60px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+.sidebar li{
+    height: 50px;
+    margin-top: 10px;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.sidebar li .icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    font-size: 20px;
+}
+.sidebar li .icon,
+.sidebar li .text{
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+
+.sidebar header{
+    position: relative;
+}
+
+.sidebar .image-text img{
+    width: 63px;
+    border-radius: 6px;
+}
+
+.sidebar header .image-text{
+    display: flex;
+    align-items: center;
+}
+
+header .image-text .header-text{
+    display: flex;
+    flex-direction:column;
+
+}
+
+.header-text .name{
+    font-weight: 600;
+
+}
+
+.header-text .profission{
+    margin-top: -2px;
+    
+}
+
+.sidebar header .toggle{
+    position: absolute;
+    top: 50%;
+    right:0;
+    transform: translateY(-50%);
+    height: 65px;
+    width: 65px;
+    background:rgba(255, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius:0%;
+    color: rgba(1, 1, 1, 0.128);
+    font-size: 22px;
+    transition: var(--tran-03);
+}
+.sidebar.close header .toggle{
+    transform: translateY(-50%);
+}
+body.dark .sidebar header .toggle{
+
+    color: var(--text-quadrado);
+}
+.sidebar .pesquisa-box{
+    background: var(--primary-color-light);
+    border-radius:6px;
+    transition: var(--tran-05);
+}
+.sidebar.menu{
+    margin-top: 35px;
+}
+.pesquisa-box input{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 500;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+.sidebar li a{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: var(--tran-04);
+}
+.sidebar li a:hover{
+    background: var(--primary-color);
+}
+.sidebar li a:hover .icon,
+.sidebar li a:hover .text{
+    color: var(--sidebar-color);
+}
+body .dark .sidebar li a:hover .icon,
+body .dark .sidebar li a:hover .text{
+    color: var(--text-color);
+}
+
+.sidebar .menu-bar{
+    height: calc(100% - 50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.menu-bar .mode{
+    position: relative;
+    background: var(--primary-color-light);
+}
+
+.menu-bar .mode .moon-sun{
+    height: 50px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+}
+.menu-bar .mode i{
+    position: absolute;
+    transition: var(--tran-03);
+}
+.menu-bar .mode i.sun{
+    opacity: 0;
+}
+body.dark .menu-bar .mode i.sun{
+    opacity: 1;
+}body.dark .menu-bar .mode i.moon{
+    opacity: 0;
+}
+.menu-bar .mode .toggle-switch{
+    position:absolute;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 60px;
+    cursor: pointer;
+    border-radius: 6px;
+    background: var(--primary-color-light);
+    transition: var(--tran-05);
+}
+.toggle-switch .switch{
+    position: relative;
+    height: 22px;
+    width: 44px;
+    border-radius: 25px;
+    background: var(--toogle-color);
+}
+.switch::before{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    background: var(--sidebar-color);
+    transition: var(--tran-03);
+}
+body.dark .switch::before{
+    left: 20px;
+}
+          
+/* inicio corpo*/
+.corpo{
+    position: relative;
+    left:250px;
+    height: 100vh;
+    width: calc(100% - 250px);
+    background:var(--body-color);
+    transition: var(--tran-05);
+}
+.home .text{
+    font-size: 30px;
+    font-weight: 500;
+    color: var(--text-color);
+    padding: 8px 40px;
+}
+.sidebar.close ~ .corpo{
+    left:88px;
+    width: calc(100% - 88px);
+}
+
+
+            /* corpo fim*/ 
+
+            
+/*topo*/
+.top{
+    background:var(--topo-color);
+    height: 15vh;
+    padding: 15px;
+    position: fixed;
+    width: 96vw;
+    box-shadow:var(--box) 0px 0px 20px 2px  ;
+}
+.top h1{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color:#1c214d;
+}
+.topo{
+    float: right;
+    margin-right: 5vw;
+    padding: 2px;
+}
+.topo a{
+   font-size: 19px;
+    color: var(--topo-txt-color);
+    margin:4px;
+    text-decoration: none;
+}
+/*fim-topo*/
+                /*menu-aula*/
+@media only screen and (max-width:600px) {
+    .dp-menu{
+        flex-direction: column;
+    }
+    .dp-menu{
+        width: 93%;
+    }
+}
+    /*ul-li*/
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+.dp-menu ul{
+    background-color:#1c214d;
+   border-radius: 10px;
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+
+}
+.dp-menu ul li a{
+    color: var(--cor-menu);
+    transition: background .3s;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.dp-menu ul:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.dp-menu ul li a:hover{
+    background:#787CB5;
+
+}
+/* fim- ul-li*/
+                /*sub menu*/
+            /*sub-ul-li*/    
+.dp-menu ul ul{
+    display: none;
+    left:0;
+    position:absolute;
+    border-radius: 0;
+    background-color:#1c214d;
+}
+.dp-menu ul li:hover ul{
+    display: block;
+   
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display:block;
+}
+            /*fim-sub-ul-li*/
+
+      /* label php's */   
+label{
+    font-family: 'Poppins',sans-serif;
+    color: var(--cor-p);
+  }

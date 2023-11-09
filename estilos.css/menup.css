@@ -1,0 +1,116 @@
+ 
+
+          /* transition */
+:root{
+--tran-02:all 0.2s ease;
+--tran-03:all 0.3s ease;
+--tran-04:all 0.4s ease;
+--tran-05:all 0.5s ease;
+
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+}
+
+    
+
+/* corpo fim*/ 
+.top{
+    background:blue;
+    height: 15vh;
+    padding: 15px;
+    position: fixed;
+    width:100%;
+    margin: 0;
+    left: 0;
+    right: 0;
+    top: -16px;
+}
+.topo{
+    margin-top: -60px;
+    float: right;
+    margin-right: 5vw;
+    padding: 2px;
+}
+.topo a{
+   font-size: 19px;
+    color: var(--topo-txt-color);
+    margin:4px;
+    text-decoration: none;
+}
+
+:root{
+    --cor-f:rgba(100, 100, 100, 0.337);
+    --cor-hover:rgb(4, 155, 70);
+    --cor-p:rgb(232,253,241);
+}
+.dp-menu ul{
+    list-style-type: none;
+    padding: 0;
+
+}
+.dp-menu ul{
+    background-color:rgba(0, 0, 0, 0.461);
+   border-radius: 5px;
+   
+}
+.dp-menu ul li{
+    display: inline;
+    position: relative;
+
+}
+.dp-menu ul li a{
+    color:white;
+    transition: background.3s;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 10px;
+}
+.dp-menu ul:hover{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.dp-menu ul li a:hover{
+    background:rgb(255, 0, 127);
+   
+}
+                /*sub menu*/
+.dp-menu ul ul{
+    display: none;
+    left:0;
+    position:absolute;
+    border-radius: 0px;
+    background-color:rgba(0, 0, 0, 0.461);
+}
+.dp-menu ul li:hover ul{
+    display: block;
+   
+}
+.dp-menu ul ul{
+    width: 150px;
+}
+.dp-menu ul ul li a{
+    display:block;
+}
+#sobr{
+    margin-top: 10px;
+    border: none;
+    width: 100%;
+    height: 1000%;
+}
+#menc{
+    margin-top: 120px;
+    border: none;
+    width: 100%;
+    height: 1000%;
+}
+#mt{
+    margin-top: 120px;
+    border: none;
+    width: 100%;
+    height: 1000%;
+}

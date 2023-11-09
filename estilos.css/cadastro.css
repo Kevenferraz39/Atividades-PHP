@@ -1,0 +1,77 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(to right, #6065b6, #28337b); 
+}
+.box{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform:translate(-50%, -50%);
+    background:rgba(0, 0, 0, 0.26);
+    padding: 15px;
+    border-radius: 10px;
+    width: 30%;
+}
+fieldset{
+ border:3px solid #4349b4;
+ border-radius: 2px;
+}
+legend{
+    border: 1px solid #4349b4;
+    background-color: #4349b4;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+}
+.inputUser{
+    background: #787cb5;
+    border: none;
+    border-radius: 10px;
+    padding: 12px;
+    outline: none;
+    color: #fcfdfd;
+    font-size: 15px;
+    width: 93%;
+    letter-spacing:1px ;
+}
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events:none;
+    transition: .5s;
+}
+.inputUser:focus ~ .labelInput, .inputUser:valid~.labelInput{
+    top: -20px;
+    font-size: 12px;
+    color:  #787cb5;
+}
+#data_nacimento{
+ border: none;
+ padding: 8px;
+ border-radius: 6px;
+ color: white;
+ background-color: #0101015f;
+ outline: none;
+
+}
+#cadastrar{
+    background-image:linear-gradient(to left, #6065b6, #28337b);
+    width: 93%;
+    border:solid 1px ;
+    border-radius: 6px;
+    padding: 12px;
+    color: #fcfdfd;
+    font-size: 16px;
+    width: 100%;
+    cursor:pointer;
+}
+#cadastrar:hover{
+    background: rgba(0, 0, 0, 0.25);
+    
+}
+

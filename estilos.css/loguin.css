@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2? family= Bungee+Spice & family= Noto+Sans:wght@400;600 & família= Poppins:ital,wght@0,400;1,300 & display= troca');
+*{ 
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-menu:rgb(232,253,241);
+    --cor-p:black;
+    --topo-color:#787cb5;
+    --topo-txt-color:black;
+    --topo-hover-color:rgb(2, 2, 2);
+    --body-color:#f2f3f6;
+    --sidebar-color:#fff;
+    --primare-color:#1c214d;
+    --primari-color:#1c214d;
+    --primary-color:#1c214d;
+    --primar-color:#1c214d;
+    --primary-color-light:#f6f5ff;
+    --toogle-color:#ddd;
+    --toogl-color:rgb(179, 179, 179);
+    --text-color:#707070;
+    --tex-color:black;
+    --botao-color:#fefdfd5b;
+    --log-color:#c9c7c7;
+    --botao-color:#1c214d;
+    --bota-color:#fffbfb54;
+    --text-quadrado:#818080;
+    --box:#474A8A;
+          /* transition */
+
+--tran-02:all 0.2s ease;
+--tran-03:all 0.3s ease;
+--tran-04:all 0.4s ease;
+--tran-05:all 0.5s ease;
+
+}
+
+body{
+    height: 100vh;
+    background: var(--body-color);
+    transition: var(--tran-05);
+    background-image:linear-gradient(to right, #6065b6, #28337b);
+    
+}
+body.dark{
+    --cor-p:rgb(232,253,241);
+    --topo-color:#474A8A;
+    --topo-txt-color:rgb(255, 255, 255);
+    --topo-hover-color:rgb(255, 254, 254);
+    --body-color:#18191a;
+    --sidebar-color:#242526;
+    --primare-color:#0b0b0b;
+    --primari-color:#37428d;
+    --primary-color:#37428d;
+    --primar-color:#37428d;
+    --primary-color-light:#3a3b3c;
+    --toogle-color:#fff;
+    --toogl-color:rgb(179, 179, 179);
+    --text-color:#ccc;
+    --tex-color:black;
+    --botao-color:#0000005b;
+    --log-color:#37428d;
+    --botao-color:rgb(3, 3, 3);
+    --bota-color:#0a0a0a60;
+    --text-quadrado:rgba(244, 239, 239, 0.036);
+    --box:#787CB5;
+}
+.main-login{
+    width: 100vw;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-login{
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background:rgba(0, 0, 0, 0.24);
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--topo-color);
+}
+.card-login > h1 {
+    color: var(--botao-color);
+    font-weight:800;
+    margin: 0;
+}
+
+.text-fild{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px;
+}
+.text-fild > input{
+    width: 100%;
+     border: none;
+     border-radius: 10px;
+     padding: 15px;
+     background:var(--topo-color);
+     color:var(--tex-color);
+     font-size: 12pt;
+     box-shadow: 0px 10px 40px #00000056;
+     outline: none;
+     box-sizing: border-box;
+}
+.text-fild > input:hover{
+    background:var(--botao-color);
+     color:var(--text-color);
+}
+/* botoes */
+#btn-new{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius:8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:var(--tex-color);
+    background:var(--toogle-color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--primare-color) ; 
+}
+button{
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius:8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color:var(--topo-color);
+    background:var(--primar-color);
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px var(--primare-color);  
+}
+
+button:hover{
+    color:var(--box);
+    background:var(--botao-color);
+}
+a{
+    text-decoration: none;
+    color:var(--tex-color);
+}
+
+/* botoes */
+
+.text-fild > label{
+    color: #f0ffffde;
+    margin-bottom: 10px; 
+}
+
+.text-fild > input::placeholder{
+    color: #f0ffff94;
+}
+@media only screen and (max-width:950px) {
+    .card-login{
+        width: 85%;
+    } 
+}
+@media only screen and (max-width:400px) {
+    .main-login{
+        flex-direction: column;
+    }
+    .left-login>h1{
+        display: none;
+    }
+    .left-login{
+        width:100%;
+        height: auto;
+    }
+    .right-login{
+        width: 100%;
+        height: auto;
+    }
+    .left-login-image{
+        width: 50vw;
+    }
+    .card-login{
+        width: 90%;
+    }
+}

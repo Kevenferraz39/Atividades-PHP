@@ -1,0 +1,99 @@
+:root{
+    --topo-color:#787cb5;
+    --primare-color:#1c214d;
+    --primari-color:#1c214d;
+    --primary-color:#1c214d;
+    --primar-color:#1c214d;
+    --box:#474A8A;
+          /* transition */
+
+--tran-02:all 0.2s ease;
+--tran-03:all 0.3s ease;
+--tran-04:all 0.4s ease;
+--tran-05:all 0.5s ease;
+
+}
+body.dark{
+    --topo-color:#474A8A;
+    --primari-color:#37428d;
+    --primary-color:#37428d;
+    --primar-color:#37428d;
+    --log-color:#37428d;
+    --box:#787CB5;
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Bungee+Spice & family= Noto+Sans:wght@400;600 & família= Poppins:ital,wght@0,400;1,300 & display= troca');
+
+
+#conv{
+    background-color: rgba(231, 238, 239, 0.326);
+    height: 400px;
+    width: 500px;
+    margin-top: 150px;
+    border-radius: 1px;
+    border-style:outset;
+    border-color: var(--primary-color);
+    box-shadow: -1px 0px 25px 10px var(--box);
+}
+#titl h1{
+   background-color: var(--topo-color);
+    border-bottom: solid;
+    padding-bottom: 20px;
+}
+h1{
+    color:  #1c214d;
+    font-size: 25px;
+    background-color: rgba(6, 5, 5, 0);
+}
+.valores{
+    background-color: rgba(6, 5, 5, 0);
+}
+.lb{
+    background-color: rgba(6, 5, 5, 0.007);
+    
+}
+.card{
+    background-color: aliceblue;
+    padding: 5px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: var(--primary-color);
+    border-width: 3.1px;
+    text-align: center;
+    
+    
+}
+#bt{
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    padding: 5px;
+    font-family: 'Poppins',sans-serif;
+    color: white;
+    background-color: var(--topo-color);
+}
+#bt:hover{
+    background-color: var(--box);
+}
+#tipo{
+    background-color: aliceblue;
+    position:absolute;
+    right: 720px;
+    padding: 2px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    color: rgb(23, 25, 48);
+    border-width: 4px;
+}
+
+    #tipo2{
+    background-color: aliceblue;
+    position:absolute;
+    right: 720px;
+    padding: 2px;
+    border-radius: 20px;
+    border-color: var(--primary-color);
+    color: rgb(23, 25, 48);
+    border-width: 4px;
+}
+
