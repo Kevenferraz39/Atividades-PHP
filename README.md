@@ -1,48 +1,54 @@
-<center><h1>PHPt</h1></center>
+<h1 align="center">
+ <img src="view/_img/Logo-SemFundo.png" width="100px;" alt="Logo"/>
+  <br>
+    PHP
+</h1>
 
 Esse e um projeto que desenvolvi no primeiro modulo do meu curso na ETEC, ele hospeda algumas atividades em PHP que desenvolvemos durantes as aulas.
 
-## Índice
+![Resultado final do projeto](view/_img/Menu-Prati.png)
 
-- [Instalação](#instalação)
-- [Banco de dados](#Copie-e-cole-no-phpmyadmin)
+<h4 align="center">
+ <a href="https://praticode.com" id="btn">Clique para visitar o projeto</a>
+</h4>
 
+## 📚 Seções
 
-## Instalação
+O site é composto por seis seções:
 
-Para utilizar basta seguir os seguintes pacos:
+- **Home:** Nele temos o menu um gif e um chat;
+- **Faleconosco:** Nessa seção temos as redes sociais do projeto e nosso chatbot;
+- **Desenvolvedores:** Apresenta quem sao os dev'se deixamos todas as nossas redes sociais;
+- **Exercicios:** Nessa seção contem todo o conteudo proposto que sao as atividades praticas;
+- **Login:** Nessa seção temos o nosso sistema de login e cadastro;
 
--- Baixar o projeto em sua maquina
+## 📂Tecnologias utilizadas
 
--- Colocalo no htdocs do seu XAMPP
+Para o desenvolvimento deste site utilizei as seguintes tecnologias:
 
--- Executar o XAMPP e buscar esse diretorio no seu navegador " http://localhost/PHPt "
+- HTML;
+- CSS;
+- PHP;
+- SQL;
+- Java Script;
 
- ## Copie e cole no phpmyadmin
--- Copie o banco de dados SQL que esta na pasta banco e cole no SQL do phpmyadmin e execute.
+## 🌐 Plataforma utilizadas
+Para desenvolvimento deste site utilizamos algumas plataformas que nos auxiliaram nos conceitos de desing:
 
-Apos isso basta voce secadastrar e logar para utilizar 
-```bash
+- https://www.remove.bg;
 
- CREATE DATABASE `loguin-phpt`;
+  
+<h2>Dev</h2>
 
-USE`loguin-phpt`;
-
-CREATE TABLE `usuarios` (
-  `id` int(11) NOT NULL,
-  `nome` varchar(140) DEFAULT NULL,
-  `email` varchar(140) NOT NULL,
-  `senha` varchar(16) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
-
-INSERT INTO `usuarios` (`id`, `nome`, `email`, `senha`) VALUES
-(1, 'usuario', 'usuario@gmail.com', 'oirausu23');
-
-ALTER TABLE `usuarios`
-  ADD PRIMARY KEY (`id`);
-
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
-COMMIT;
-
-
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/Kevenferraz39">
+          <img src="view/_img/eu.jpeg" width="100px;" alt="Foto do Keven Ferraz"/><br>
+        <sub>
+          <b>Keven Ferraz</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>
