@@ -1,7 +1,7 @@
 <?php
-      include('conexao.php'); //para incluir os codigos da pagina conexao.php 
+      include('../../conexao.php'); //para incluir os codigos da pagina conexao.php 
 
-    if(isset($_POST['email'])||isset($_POST['senha'])){
+    if(isset($_POST['email'])||isset($_POST['senha'])){ 
 
         if(strlen($_POST['email']) == 0){
             echo"<script>alert('Preencha seu E-mail!');</script>";

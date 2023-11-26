@@ -24,7 +24,7 @@
         }
         </style>
 <body>
-<form action="" method="post">
+<form action="../../../login.php" method="post">
 <div class="main-login">
     <div class="right-login">
         <div class="card-login">
